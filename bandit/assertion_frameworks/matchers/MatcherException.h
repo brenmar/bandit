@@ -8,7 +8,7 @@ namespace bandit { namespace Matchers {
     {
     public:
       MatcherException(const std::string& filename, const unsigned linenumber, const std::string& message) : detail::assertion_exception(message, filename, linenumber) {}
-      MatcherException(const MatcherException&) = default;
+      //?-MatcherException(const MatcherException&) = default;
       virtual ~MatcherException() noexcept {}
     };
 }}

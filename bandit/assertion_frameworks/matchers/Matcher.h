@@ -32,7 +32,7 @@ namespace bandit { namespace Matchers {
 
 	std::string failure_message(const std::nullptr_t pointer, bool negate) const
 	{
-	    (void)pointer;
+	    //?-(void)pointer;
 	    return failure_message("nullptr", negate);
 	}
 

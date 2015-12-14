@@ -79,7 +79,7 @@ namespace bandit { namespace detail {
   private:
 	  WORD get_console_color() const
 	  {
-		  CONSOLE_SCREEN_BUFFER_INFO info{};
+		  CONSOLE_SCREEN_BUFFER_INFO info;//?-{};
 		  GetConsoleScreenBufferInfo(stdout_handle_, &info);
 		  return info.wAttributes;
 	  }

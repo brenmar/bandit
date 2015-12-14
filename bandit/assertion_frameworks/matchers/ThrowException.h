@@ -12,7 +12,8 @@ namespace bandit { namespace Matchers {
         ThrowException() : Matcher(), _allow_subclasses(false) {}
         explicit ThrowException(bool allow_subclasses) : Matcher(), _allow_subclasses(allow_subclasses) {}
 
-	template <typename U = std::exception>
+	//?-template <typename U = std::exception>
+	template <typename U>
         ThrowException<U> operator()() const
 	{
 	    return ThrowException<U>();
